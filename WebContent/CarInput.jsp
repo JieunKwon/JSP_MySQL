@@ -1,5 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%--
+
+Nov 7, 2018
+Jieun Kwon
+
+CarInput.jsp - input form
+JSPData.jsp - handling db
+Dataview.jsp - display data list   
+    
+    
+     --%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +34,7 @@ body, table{
 	
 <table>
 
+<!--  Manufacturer ID options -->
 <tr>
   
 	<td align="left" width="150">Id </td>
@@ -40,11 +52,12 @@ body, table{
 	</select>
 	
 </tr>
-
+<!-- Model Name -->
 <tr>
 	<td align="left" width="100">model </td>
 	<td><input type="text" name="model" id="model" value="" maxlength="30" class="box_general"></td>
 </tr>
+<!-- Year -->
 <tr>
 	<td>year </td>
 	<td><input type="text" name="year" id="year" value="" maxlength="30" class="box_general"></td>
@@ -59,12 +72,14 @@ body, table{
 </tr>
 
 <tr>
-<td colspan="2" height="30" align="center"> <input type="submit" value="Add Info"> </td></tr>
+	<td colspan="2" height="30" align="center"> 
+	<input type="submit" value="Add Info"> 
+	<input type="button" value="Search Brand" onclick="javascript:GoSearch();">
+	</td>
+</tr>
 </table>
  	
-	<br><br>
-			<input type="button" value="Search Brand" onclick="javascript:GoSearch();">
-	</form>
+</form>
 	
 	
 	
